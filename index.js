@@ -1,3 +1,5 @@
+// server Set up 
+
 // const http =  require("http");
 
 // const dataHandle = (req , res)=>{
@@ -7,6 +9,8 @@
 
 
 // const proxy = http.createServer(dataHandle).listen(4600);
+
+// colors package test 
 const colors = require('colors');
 
 console.log('hello'.green); // outputs green text
