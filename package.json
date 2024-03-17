@@ -1,0 +1,23 @@
+{
+  "name": "nodejs-ka",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Saurabh Dubey",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "colour": "^0.7.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saurabh15april/node-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/saurabh15april/node-js/issues"
+  },
+  "homepage": "https://github.com/saurabh15april/node-js#readme",
+  "description": ""
+}
