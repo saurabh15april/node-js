@@ -1,3 +1,5 @@
+// server Set up 
+
 // const http =  require("http");
 
 // const dataHandle = (req , res)=>{
@@ -7,7 +9,7 @@
 
 
 // const proxy = http.createServer(dataHandle).listen(4600);
-// const colors = require('colors');
+const colors = require('colors');
 
 // console.log('hello'.green); // outputs green text
 // console.log('i like cake and pies'.underline.red) // outputs red underlined text
