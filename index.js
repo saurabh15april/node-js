@@ -9,7 +9,7 @@
 
 
 // const proxy = http.createServer(dataHandle).listen(4600);
-const colors = require('colors');
+// const colors = require('colors');
 
 // console.log('hello'.green); // outputs green text
 // console.log('i like cake and pies'.underline.red) // outputs red underlined text
@@ -46,3 +46,32 @@ const colors = require('colors');
 
 
 
+const fs =  require('fs');
+const path = require('path');
+const dirpath = path.join(__dirname,'curd');
+const filepath = `${dirpath}/apple.txt`;
+
+// create file 
+//fs.writeFileSync(filepath, "this is simple text file ");
+
+//read file 
+
+// fs.readFile(filepath,'utf8',(err,item)=>{
+//     console.log(item);
+// } )
+
+
+// update file 
+// fs.appendFile(filepath, " and the file name mention  in the folder ", (err)=>{
+//     if(!err){
+//         console.log(" file is updated")
+//     }
+// })
+
+//rename file 
+
+fs.rename(filepath,`${dirpath}/fruit.txt`, (err)=>{ if(!err){
+    console.log("file name is updated ");
+}
+
+})
