@@ -52,14 +52,12 @@ const dirpath = path.join(__dirname,'curd');
 const filepath = `${dirpath}/apple.txt`;
 
 // create file 
-//fs.writeFileSync(filepath, "this is simple text file ");
+// fs.writeFileSync(filepath, "this is simple text file ");
 
 //read file 
-
 // fs.readFile(filepath,'utf8',(err,item)=>{
 //     console.log(item);
 // } )
-
 
 // update file 
 // fs.appendFile(filepath, " and the file name mention  in the folder ", (err)=>{
@@ -69,9 +67,27 @@ const filepath = `${dirpath}/apple.txt`;
 // })
 
 //rename file 
+// fs.rename(filepath,`${dirpath}/fruit.txt`, (err)=>{ if(!err){
+//     console.log("file name is updated ");
+// }})
+ 
+// write code for delete file fruit.txt file
+//  fs.unlink(`${dirpath}/fruit.txt`, (err)=>{ if(!err){
+//     console.log("file is deleted ");
+// }})
 
-fs.rename(filepath,`${dirpath}/fruit.txt`, (err)=>{ if(!err){
-    console.log("file name is updated ");
-}
 
-})
+
+
+// promise function in node js node js is asynchronus 
+ let a =10;
+  const myprommise =  new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        resolve(30);
+
+    },2000)
+  })
+
+  myprommise.then((data)=>{
+    console.log(a+data);
+  })
